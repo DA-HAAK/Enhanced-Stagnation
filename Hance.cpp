@@ -1,4 +1,6 @@
 #include "Hance.h"
+#include <cstdlib>
+#include <ctime>
 
 Hance::Hance()
 {
@@ -21,8 +23,9 @@ Hance::void wander() {
     else if (dir == 'a' && is ValidPos(0,-1)) {pos.shift(0,-1)}
 }
 
-Hance::char getRandomDir(int minimum, int maximum) {
-    int rand = (rand() % maximum) + minimun;
+Hance::char getRandomDir(unsigned minimum, unsigned maximum) {
+    srand(static_cast<unsigned>(time(nullptr)));
+    int rand = rand() % (max_value - min_value + 1) + min_value;
     if(rand == 1) {return 'w';}
     else if(rand == 2) {return 's';}
     else if(rand == 3) {return 'd';}
