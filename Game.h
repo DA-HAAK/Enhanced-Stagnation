@@ -27,6 +27,7 @@ class Game
         void updateStann(char dir);
         void updateHance();
         void update();
+        Hance createHance();
     protected:
 
     private:
