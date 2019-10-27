@@ -33,7 +33,7 @@ class Stann
         @return whether or not Stann can be located at the coordinates
         */
         bool isValidPos(int r, int c);
-
+        bool isLocated(Position pos);
     protected:
 
     private:
