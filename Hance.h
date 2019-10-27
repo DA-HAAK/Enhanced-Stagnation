@@ -12,6 +12,7 @@ class Hance
         bool isValidPos(int r, int c);
         char getId();
         bool isLocated(Position p);
+        char getDir();
     protected:
 
     private:
