@@ -39,6 +39,7 @@ Game::void setUpHance() {
 }
 Game::void updateStann(char dir) {
     player.changePos(dir);
+    void checkForCollision(dir);
 }
 Game::void updateHance() {
      unsigned tik = score % 4;
@@ -46,9 +47,23 @@ Game::void updateHance() {
     hance.wander();
 }
 }
-Game::void update() {updateStann(); updateHance();}
+//Game::void update() {updateStann(); updateHance();}
 
 Game::Hance createHance() {
     return new Hance(5, 8);
 }
 
+Game:void checkForCollision(Position p) {
+    for (size_t i = 0;i<hances.size();i++) {
+        if (player.getPosition() == hances.at(i) ) {
+            if(player.getDir() =='w' && hances.at(i).getDir() == 's') {hances.at(i).erase();}
+            else { player.healthDown(); hances.at(i).erase();}
+            if(player.getDir() =='a' && hances.at(i).getDir() == 'd') {hances.at(i).erase();}
+            else { player.healthDown(); hances.at(i).erase();}
+            if(player.getDir() =='s' && hances.at(i).getDir() == 'w') {hances.at(i).erase();}
+            else { player.healthDown(); hances.at(i).erase();}
+            if(player.getDir() =='d' && hances.at(i).getDir() == 'a') {hances.at(i).erase();}
+            else { player.healthDown(); hances.at(i).erase();}
+        }
+    }    
+) 
