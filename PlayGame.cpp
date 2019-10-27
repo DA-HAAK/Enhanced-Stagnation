@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include "Game.h"
+#include <conio.h>
 
 using namespace std;
 
@@ -41,20 +42,20 @@ int main() {
             "////////////////////////////////////////////////////////" << endl;
     string dummy;
     getline(cin, dummy);
-            
-    
 
-    Game game = new Game();
+
+
+    Game game = *new Game();
     bool playing = game.getStatus();
     unsigned int time = 0;
-    
+
     while(playing) {
         if(_kbhit) {
-            char current = _geth();
-            if (current == 'w') {game.update('w');}
-            else if (current == 's') {game.update('s');}
-            else if (current == 'a') {game.update('a');}
-            else if (current == 'd') {game.update('d');}
+            char current = _getch();
+            if (current == 'w') {game.updateStann('w');game.updateHance();}
+            else if (current == 's') {game.updateStann('s');game.updateHance();}
+            else if (current == 'a') {game.updateStann('a');game.updateHance();}
+            else if (current == 'd') {game.updateStann('d');game.updateHance();}
             else {
                 playing = false;
             }
@@ -62,7 +63,7 @@ int main() {
             game.increaseScore();
         }
     }
-    cout<<"You died!"<<endl;
-    cout<<endl;
-    cout<<"Your score: "<<time;
+    cout << "You died!" << endl;
+    cout << endl;
+    cout << "Your score: " << time;
 }
