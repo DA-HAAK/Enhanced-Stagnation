@@ -2,12 +2,32 @@
 #define LEVEL_H
 #include <vector>
 #include <iostream>
+#include "Stann.h"
+#include "Hance.h"
 
 using namespace std;
 
 class Level
 {
     public:
+        const int COL = 10;
+        const int ROW = 15;
+        char levelOne[15][10] =  { ('X','X','X','X','X','X','X','X','X','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X',' ','X','X',' ',' ','X','X',' ','X')
+                                   ('X',' ','X',' ',' ',' ',' ','X',' ','X')
+                                   ('X',' ',' ',' ','X','X',' ',' ',' ','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X','X',' ',' ','X','X',' ',' ','X','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X',' ',' ',' ','X','X',' ',' ',' ','X')
+                                   ('X',' ','X',' ',' ',' ',' ','X',' ','X')
+                                   ('X',' ','X','X',' ',' ','X','X',' ','X')
+                                   ('X',' ',' ',' ',' ',' ',' ',' ',' ','X')
+                                   ('X','X','X','X','X','X','X','X','X','X')};
+
         Level();
         virtual ~Level();
         /**
@@ -24,7 +44,7 @@ class Level
         @param player the player Stann
         */
         void addStann(Stann player);
-        /** 
+        /**
         add a hance to the level
         */
         void addHance();
@@ -34,24 +54,8 @@ class Level
     private:
         Stann player;
         Hance hance;
-        vector<Hance> hances[][];
-        const int COL = 10;
-        const int ROW = 15;
-        char levelOne[ROW][COL] = {(X,X,X,X,X,X,X,X,X,X),
-                                   (X, , , , , , , , ,X),
-                                   (X, ,X,X, , ,X,X, ,X),
-                                   (X, ,X, , , , ,X, ,X),
-                                   (X, , , ,X,X, , , ,X),
-                                   (X, , , , , , , , ,X),
-                                   (X, , , , , , , , ,X),
-                                   (X,X, , ,X,X, , ,X,X),
-                                   (X, , , , , , , , ,X),
-                                   (X, , , , , , , , ,X),
-                                   (X, , , ,X,X, , , ,X),
-                                   (X, ,X, , , , ,X, ,X),
-                                   (X, ,X,X, , ,X,X, ,X),
-                                   (X, , , , , , , , ,X),
-                                   (X,X,X,X,X,X,X,X,X,X)};
+        vector<Hance> hances[];
+
 };
 
 #endif // LEVEL_H
