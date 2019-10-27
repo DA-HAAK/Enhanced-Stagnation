@@ -36,6 +36,7 @@ class Game
         int score;
         Stann player;
         Hance hance;
+        vector<Hance> hances[];
 
 };
 
