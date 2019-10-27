@@ -63,9 +63,16 @@ Stann::bool isValidPos(int r, int c) {
     else {return true;}
     }
 }
-
+/**
+checks to see if logic is true
+@param p the position
+@return whether the logic is true
+*/
 Stann::bool isLocated(Position p) {
     if (pos == p) {return true;}
 }
-
+/**
+gets the direction
+@return the direction
+*/
 Stann::char getDir() {return dir;}
