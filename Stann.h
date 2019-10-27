@@ -1,5 +1,6 @@
 #ifndef STANN_H
 #define STANN_H
+#include "Position.h"
 
 #include <iostream>
 #include <windows.h>
