@@ -36,6 +36,11 @@ int main() {
              "See how long you can make Stann survive this onslaught." <<
              endl <<
              endl;
+    cout << "////////////////////////////////////////////////////////" << endl <<
+            "Press any enter to start your battle.   " << endl <<
+            "////////////////////////////////////////////////////////" << endl;
+    string dummy;
+    getline(cin, dummy);
             
     
 
