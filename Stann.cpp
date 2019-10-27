@@ -43,11 +43,11 @@ changes the position of Stann
 */
 // if this doesn't work, it is the else statement at the end that is causing problems probably
 Stann::void changePos(char dir) {
-    if (dir == 'w' && isValidPos(0,-1)) {row--;}
-    else if (dir == 's' && isValidPos(1,0)) {row++;}
-    else if (dir == 'd' && isValidPos(0,1)) {col++;}
-    else if (dir == 'a' && isValidPos(0,-1)) {col++;}
-    else {return}
+    if (dir == 'w' && isValidPos(0,-1)) {pos.shift(0,-1);}
+    else if (dir == 's' && is ValidPos(1,0)) {pos.shift(1,0);}
+    else if (dir == 'd' && is ValidPos(0,1)) {pos.shift(0,1);}
+    else if (dir == 'a' && is ValidPos(0,-1)) {pos.shift(0,-1)}
+}
 }
 /**
 finds if the direction gone is valid or not
