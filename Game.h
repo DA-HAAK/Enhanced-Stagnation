@@ -28,6 +28,7 @@ class Game
         void updateHance();
         void update();
         Hance createHance();
+        void checkForCollision(Position p);
     protected:
 
     private:
