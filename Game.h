@@ -29,6 +29,7 @@ class Game
         void update();
         Hance createHance();
         void checkForCollision(Position p);
+        void increaseScore();
     protected:
 
     private:
