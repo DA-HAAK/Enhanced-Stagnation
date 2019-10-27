@@ -20,15 +20,35 @@ class Game
         */
         void increaseDifficulty();
         /**
-        
+        sets up the player Stann 
         */
         void setUpPlayer();
+        /**
+        sets up the bad guy, Hance
+        */
         void setUpHance();
+        /**
+        updates the position of Stann
+        */
         void updateStann(char dir);
+        /**
+        updates the number of Hance and the position of the Hance
+        */
         void updateHance();
-        void update();
+    
+        //void update();
+        /**
+        create a new Hance at the Hance spawn point
+        */
         Hance createHance();
+        /**
+        checks for collision between Hance and Stann
+        @param p the position
+        */
         void checkForCollision(Position p);
+        /**
+        increases the score
+        */
         void increaseScore();
     protected:
 
