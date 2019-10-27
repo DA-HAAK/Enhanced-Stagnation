@@ -68,3 +68,4 @@ Stann::bool isLocated(Position p) {
     if (pos == p) {return true;}
 }
 
+Stann::char getDir() {return dir;}
