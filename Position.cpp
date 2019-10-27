@@ -17,3 +17,7 @@ Position::~Position()
 {
   //dtor
 }
+Position::void shift(int r, int c) {
+    row +=r;
+    col+=c;
+}
