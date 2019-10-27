@@ -34,6 +34,7 @@ class Stann
         */
         bool isValidPos(int r, int c);
         bool isLocated(Position pos);
+        char getDir();
     protected:
 
     private:
