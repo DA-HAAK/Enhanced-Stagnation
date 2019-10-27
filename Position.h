@@ -10,9 +10,22 @@ class Position
   public:
     Position();
     virtual ~Position();
-
+    Position(int r, int c);
+    /**
+    get the row of the character
+    @return the row
+    */
     unsigned int getRow();
+    /**
+    get the column of the character
+    @return the column
+    */
     unsigned int getCol();
+    /**
+    shift the row and column
+    @param r the row
+    @param c the column
+    */
     void shift(int r, int c);
   protected:
 
