@@ -70,3 +70,5 @@ Game:void checkForCollision(Position p) {
         }
     }    
 ) 
+
+Game::voidIncreaseScore() {score++;}
