@@ -10,6 +10,10 @@ class Stann
     public:
         Stann();
         virtual ~Stann();
+        /**
+        returns the ID for Stann to be printed to the screen
+        @return the char ID for Stann
+        */
         char getId();
         void healthDown();
         /**
@@ -17,7 +21,17 @@ class Stann
         @return whether Stann is alive or not
         */
         bool getStatus();
+        /**
+        changes the position of Stann
+        @param dir the direction that Stann will go
+        */
         void changePos(Position p, char dir);
+        /**
+        finds if the direction gone is valid or not
+        @param r the row where Stann would go
+        @param c the row where Stann would go
+        @return whether or not Stann can be located at the coordinates
+        */
         bool isValidPos(int r, int c);
 
     protected:
