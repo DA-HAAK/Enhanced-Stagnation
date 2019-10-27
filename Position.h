@@ -8,9 +8,9 @@ class Position
     Position();
     virtual ~Position();
 
-    unsigned int getrow();
-    unsigned int getcol();
-
+    unsigned int getRow();
+    unsigned int getCol();
+    void shift(int r, int c);
   protected:
 
   private:
