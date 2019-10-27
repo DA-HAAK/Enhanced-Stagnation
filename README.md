@@ -1,5 +1,5 @@
 # Enhanced-Stagnation
-*Welcome to Enhanced Stagnation
+*Welcome to Enhanced Stagnation*
 
 Controls:
 -----------------
