@@ -40,7 +40,7 @@ sets up the bad guy, Hance
 Game::void setUpHance() {
     badGuy = createHance();
     level.addHance(badGuy);
-    hanes.push_back(badGuy);
+    hances.push_back(badGuy);
 }
 /**
 updates the position of Stann
@@ -58,7 +58,9 @@ Game::void updateHance() {
     hance.wander();
 }
 //Game::void update() {updateStann(); updateHance();}
-
+/**
+create a new Hance at the Hance spawn point
+*/
 Game::Hance createHance() {
     return new Hance(5, 8);
 }
@@ -80,5 +82,7 @@ Game:void checkForCollision(Position p) {
         }
     }    
 ) 
-
+/**
+increases the score
+*/
 Game::voidIncreaseScore() {score++;}
