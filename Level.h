@@ -1,6 +1,9 @@
 #ifndef LEVEL_H
 #define LEVEL_H
 #include <vector>
+#include <iostream>
+
+using namespace std;
 
 class Level
 {
