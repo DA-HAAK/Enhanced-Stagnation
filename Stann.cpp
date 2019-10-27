@@ -28,7 +28,10 @@ Stann::char getID() {
 gets the health of Stann
 @return the status of Stann's health
 */
-Stann::bool getHealth() {return alive;}
+Stann::bool getStatus() {
+    if (health > 0) {alive = true;}
+    else { alive = false;}
+    return alive;
 /**
 deals damage to Stann's health
 @return Stann's health, but lessened by one
