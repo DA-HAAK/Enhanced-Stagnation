@@ -46,7 +46,8 @@ int main() {
 
     Game game = new Game();
     bool playing = game.getStatus();
-
+    unsigned int time = 0;
+    
     while(playing) {
         if(_kbhit) {
             char current = _geth();
@@ -57,6 +58,11 @@ int main() {
             else {
                 playing = false;
             }
+            time++;
+            game.increaseScore();
         }
     }
+    cout<<"You died!"<<endl;
+    cout<<endl;
+    cout<<"Your score: "<<time;
 }
