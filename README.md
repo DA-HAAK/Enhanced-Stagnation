@@ -1,20 +1,21 @@
 # Enhanced-Stagnation
-////////////////////////////////////////////////////////////////////
-                 Welcome to Enhanced Stagnation
-////////////////////////////////////////////////////////////////////
+*Welcome to Enhanced Stagnation
 
 Controls:
+-----------------
 
             [w]             =               [up]
         [a] [s] [d]         =       [left] [down] [right]
 
 Press any other keys to quit.
---------------------------------------------------------------------
+
 Goal:
+------
 
 Survive as long as you can.
---------------------------------------------------------------------
+
 Gameplay:
+----------
 
 The player Stan ( a variant of 'v', '<', '>', or '^' ) can go in any 
 direction for one space per turn, but the same goes for the Hance, 
