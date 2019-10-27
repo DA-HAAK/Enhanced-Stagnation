@@ -6,6 +6,8 @@ Game::Game()
     level = new Level();//ask user for level
     level.initializeWorld();
     level.draw();
+    setUpPlayer();
+    setUpHance();
 }
 
 Game::~Game()
@@ -34,8 +36,9 @@ Game::void setUpPlayer() {
 }
 
 Game::void setUpHance() {
-    //badGuy = createHance(13,8);
-    level.addHance(hance);
+    badGuy = createHance();
+    level.addHance(badGuy);
+    hanes.push_back(badGuy);
 }
 Game::void updateStann(char dir) {
     player.changePos(dir);
