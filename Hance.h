@@ -1,9 +1,3 @@
-#ifndef HANCE_H
-#define HANCE_H
-#include <cstdlib>
-#include <ctime>
-#include <iostream>
-
 using namespace std;
 
 
@@ -20,7 +14,7 @@ class Hance
         get a random direction for the Hance to go
         @param minimum the minimum random value
         @param maximum the maximum random value
-        @return a char that corresponds to a number that tells the direction the Hance might go 
+        @return a char that corresponds to a number that tells the direction the Hance might go
         */
         char getRandomDir(unsigned minimum, unsigned maximum);
         /**
@@ -41,10 +35,11 @@ class Hance
         */
         bool isLocated(Position p);
         /**
-        get the direction in which a characer is heading
+        get the direction in which a character is heading
         @return the direction in a char value
         */
         char getDir();
+
     protected:
 
     private:
