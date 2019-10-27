@@ -1,5 +1,10 @@
 #ifndef HANCE_H
 #define HANCE_H
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
 
 
 class Hance
