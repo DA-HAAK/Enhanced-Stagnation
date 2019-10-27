@@ -3,6 +3,10 @@
 
 #include <iostream>
 #include <windows.h>
+#include "Hance.h"
+#include "Stann.h"
+#include "Level.h"
+
 using namespace std;
 
 class Game
@@ -20,7 +24,7 @@ class Game
         */
         void increaseDifficulty();
         /**
-        sets up the player Stann 
+        sets up the player Stann
         */
         void setUpPlayer();
         /**
@@ -35,7 +39,7 @@ class Game
         updates the number of Hance and the position of the Hance
         */
         void updateHance();
-    
+
         //void update();
         /**
         create a new Hance at the Hance spawn point
