@@ -30,7 +30,7 @@ Level::void addStann(Stann player) {
     levelOne[1][1] = player;
     for (int i = 0; i< 15;i++ ) {
         for(int j=0; j<10;j++ ) {
-            if (player.isLocated(levelOne[i][j])) {
+            if (player.isLocated(levelOne[i][j]) && levelOne[i][j] != 'X' && levelOne[i][j] != hance.getId()) {
                 //levelOne[i][j] = player.getId();
             }
         }
