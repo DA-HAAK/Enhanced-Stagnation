@@ -63,3 +63,8 @@ Stann::bool isValidPos(int r, int c) {
     else {return true;}
     }
 }
+
+Stann::bool isLocated(Position p) {
+    if (pos == p) {return true;}
+}
+
