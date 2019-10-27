@@ -29,35 +29,45 @@ Game::void increaseDifficulty() {
     level.addHance(hance);
 }
 /**
-
+sets up the player Stann
 */
 Game::void setUpPlayer() {
     level.setUpPlayer(Stann p);
 }
-
+/**
+sets up the bad guy, Hance
+*/
 Game::void setUpHance() {
     badGuy = createHance();
     level.addHance(badGuy);
     hanes.push_back(badGuy);
 }
+/**
+updates the position of Stann
+*/
 Game::void updateStann(char dir) {
     player.changePos(dir);
     void checkForCollision(dir);
 }
+/**
+updates the number of Hance and the position of the Hance
+*/
 Game::void updateHance() {
      unsigned tik = score % 4;
     if(tik==0) {level.addHance();}
     hance.wander();
-}
 }
 //Game::void update() {updateStann(); updateHance();}
 
 Game::Hance createHance() {
     return new Hance(5, 8);
 }
-
+/**
+checks for collision between Hance and Stann
+@param p the position
+*/
 Game:void checkForCollision(Position p) {
-    for (size_t i = 0;i<hances.size();i++) {
+    for (size_t i = 0; i < hances.size(); i++) {
         if (player.getPosition() == hances.at(i) ) {
             if(player.getDir() =='w' && hances.at(i).getDir() == 's') {hances.at(i).erase();}
             else { player.healthDown(); hances.at(i).erase();}
