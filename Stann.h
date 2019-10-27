@@ -33,7 +33,16 @@ class Stann
         @return whether or not Stann can be located at the coordinates
         */
         bool isValidPos(int r, int c);
+        /**
+        checks to see if logic is true
+        @param p the position
+        @return whether the logic is true
+        */
         bool isLocated(Position pos);
+        /**
+        gets the direction
+        @return the direction
+        */
         char getDir();
     protected:
 
