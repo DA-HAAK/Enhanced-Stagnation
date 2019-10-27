@@ -1,6 +1,4 @@
 #include "Hance.h"
-#include <cstdlib>
-#include <ctime>
 
 Hance::Hance()
 {
