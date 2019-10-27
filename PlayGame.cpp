@@ -5,11 +5,11 @@
 using namespace std;
 
 int main() {
-    cout<<"//////////////////////////////"<<endl;
-    cout<<"Welcome to Enhanced Stagnation"<<endl;
-    cout<<"//////////////////////////////"
-    cout<<endl;
-    cout<<"Directions:"<<endl;
+    cout << "//////////////////////////////" << endl;
+    cout << "Welcome to Enhanced Stagnation" << endl;
+    cout << "//////////////////////////////";
+    cout << endl;
+    cout << "Directions:"<<endl;
     cout<<"--------------------"<<endl;
 
     Game game = new Game();
