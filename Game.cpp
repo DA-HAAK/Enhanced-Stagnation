@@ -34,13 +34,21 @@ Game::void setUpPlayer() {
 }
 
 Game::void setUpHance() {
-    badGuy = createHance(13,8);
+    //badGuy = createHance(13,8);
     level.addHance(hance);
 }
 Game::void updateStann(char dir) {
     player.changePos(dir);
 }
 Game::void updateHance() {
-    //hance.wander
+     unsigned tik = score % 4;
+    if(tik==0) {level.addHance();}
+    hance.wander();
+}
 }
 Game::void update() {updateStann(); updateHance();}
+
+Game::Hance createHance() {
+    return new Hance(5, 8);
+}
+
