@@ -13,17 +13,22 @@ Game::~Game()
     //dtor
 }
 
-/*
-* Returns the status of the game
+/**
+gets the status of the game (playing or finished)
+@return the status of the game
 */
 Game::bool getStatus() {
     return level.getStatus();
 }
-
+/**
+increases the difficulty via adding a hance to the playing field
+*/
 Game::void increaseDifficulty() {
     level.addHance(hance);
 }
+/**
 
+*/
 Game::void setUpPlayer() {
     level.setUpPlayer(Stann p);
 }
