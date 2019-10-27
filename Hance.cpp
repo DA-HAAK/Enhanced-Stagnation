@@ -39,7 +39,7 @@ Hance::bool isValidPos(int r, int c) {
 Hance::char getId() {
     return 'H';
 }
-Hence::bool isLocated(Position p) {
+Hance::bool isLocated(Position p) {
     if (pos == p) {return true;}
 }
-
+Hance::char getDir() { return dir;}
